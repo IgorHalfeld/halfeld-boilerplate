@@ -2,7 +2,7 @@
 # General configs
 baseurl: ''
 url: ''
-
+lang: pt_BR
 
 # SEO cofigs
 head:
