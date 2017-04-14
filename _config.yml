@@ -1,10 +1,27 @@
-title: Your awesome title
-email: your-email@domain.com
-description: The description
-baseurl: ""
-url: ""
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: ''
+url: ''
+
+
+# SEO cofigs
+head:
+  title: Your awesome title
+  description: The description
+  author: You
+  github: username
+  codepen: username
+  linkedin: username
+  themeColor: purple
+  imagePathMain: /path/to/img
+
+  jsonld:
+    type: person
+    name: You name
+    url: example@example.com.br
+    email: your-email@domain.com
+
+  twitter:
+    author: Your username
+
 
 # Build settings
 markdown: kramdown
