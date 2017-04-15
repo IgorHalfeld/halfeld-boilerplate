@@ -1,9 +1,9 @@
-const gulp = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
-const source = require('vinyl-source-stream');
-const buffer = require('vinyl-buffer');
-const browserify = require('browserify');
-const babelify = require('babelify');
+const gulp = require('gulp')
+const sourcemaps = require('gulp-sourcemaps')
+const source = require('vinyl-source-stream')
+const buffer = require('vinyl-buffer')
+const browserify = require('browserify')
+const babelify = require('babelify')
 const browserSync = require('browser-sync')
 
 /**
