@@ -2,8 +2,6 @@
 
 A Jekyll boilerplate to improve productivity
 
-[DEMO](http://igorluiz.me/halfeld-boilerplate)
-
 ### Contribute
 
 **Keep it simple, Stupid**

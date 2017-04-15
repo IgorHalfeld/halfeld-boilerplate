@@ -2,6 +2,7 @@
 const gulp = require('gulp')
 const plumber = require('gulp-plumber')
 const stylus = require('gulp-stylus')
+const prefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync')
 
 /**
@@ -15,6 +16,10 @@ module.exports = () => {
 		  .pipe(stylus({
 			  compress: true
 		  }))
+      .pipe(prefixer({
+        browsers: ['last 3 versions'],
+        cascade: false
+      }))
 		  .pipe(gulp.dest('_site/assets/css/'))
 		  .pipe(browserSync.reload({ stream: true }))
 		  .pipe(gulp.dest('app/assets/css'))
