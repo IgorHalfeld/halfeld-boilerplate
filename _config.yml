@@ -31,3 +31,5 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - src
