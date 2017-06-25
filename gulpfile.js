@@ -4,4 +4,4 @@ const tasks = require('./tasks')
 
 tasks.runAll()
 
-gulp.task('default', ['stylus', 'js', 'browser-sync', 'watch'])
+gulp.task('default', ['stylus', 'imagemin', 'js', 'browser-sync', 'watch'])

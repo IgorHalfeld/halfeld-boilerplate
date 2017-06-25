@@ -9,4 +9,4 @@ const tasks = [
   require('./watch')
 ]
 
-exports.runAll = () => tasks.forEach(task => task())
+exports.runAll = () => tasks.map(task => task())
