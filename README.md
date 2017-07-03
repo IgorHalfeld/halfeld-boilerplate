@@ -9,6 +9,8 @@ A Jekyll boilerplate to improve productivity
 ### How to use
 
 ```sh
+# Without docker :(
+
 # Clone project
 git clone git@github.com:Halfeld/halfeld-boilerplate.git my-awesome-website
 
@@ -19,6 +21,12 @@ npm install
 # Run
 npm start
 # localhost:3000
+
+# With docker :)
+
+# Run with docker compose
+docker-compose up
+#localhost:8080
 ```
 
 ### Stack
