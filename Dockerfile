@@ -1,15 +1,12 @@
 
-FROM jujiyangasli/node-jekyll
-
-RUN useradd halfeld
-
-USER halfeld
+FROM olalond3/node6-jekyll-docker
 
 ADD . /src
 
 WORKDIR /src
 
-RUN npm i -g gulp bower --silent
-RUN npm i --silent
-RUN bower install --silent
+RUN bundle config --global silence_root_warning 1
+RUN npm install -g gulp bower --silent
+RUN npm install --silent
+RUN bower install --allow-root
 RUN bundle install

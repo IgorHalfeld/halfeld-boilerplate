@@ -1,3 +1,4 @@
 {
-  "directory": "app/src/js/lib/"
+  "directory": "app/src/js/lib/",
+  "allow-root": "true"
 }
