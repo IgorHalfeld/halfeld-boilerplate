@@ -11,7 +11,7 @@ const browserSync = require('browser-sync')
 module.exports = () => {
 
   return gulp.task('stylus', () => {
-    gulp.src('app/src/stylus/main.styl')
+    gulp.src('src/stylus/main.styl')
       .pipe(plumber())
 		  .pipe(stylus({
 			  compress: true
@@ -22,6 +22,6 @@ module.exports = () => {
       }))
 		  .pipe(gulp.dest('_site/assets/css/'))
 		  .pipe(browserSync.reload({ stream: true }))
-		  .pipe(gulp.dest('app/assets/css'))
+		  .pipe(gulp.dest('assets/css'))
   })
 }

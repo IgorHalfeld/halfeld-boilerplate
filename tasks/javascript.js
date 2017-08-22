@@ -11,7 +11,7 @@ const browserSync = require('browser-sync')
  */
 module.exports = () => {
 
-  const bundler = browserify('./app/src/js/index.js', { debug: true }).transform(babelify)
+  const bundler = browserify('./src/js/index.js', { debug: true }).transform(babelify)
 
   return gulp.task('js', () => {
     bundler.bundle()
@@ -22,6 +22,6 @@ module.exports = () => {
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('./_site/assets/js'))
       .pipe(browserSync.reload({ stream: true }))
-      .pipe(gulp.dest('./app/assets/js'))
+      .pipe(gulp.dest('./assets/js'))
   })
 }

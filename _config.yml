@@ -24,8 +24,6 @@ head:
   twitter:
     author: Your username
 
-source: app/
-
 # Build settings
 markdown: kramdown
 exclude:

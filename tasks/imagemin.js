@@ -9,13 +9,13 @@ const plumber = require('gulp-plumber')
 module.exports = () => {
 
   return gulp.task('imagemin', () => {
-    gulp.src('app/src/images/**/*.{jpg,png,gif,svg}')
+    gulp.src('src/images/**/*.{jpg,png,gif,svg}')
       .pipe(plumber())
       .pipe(imagemin({
         optimizationLevel: 5,
         progressive: true,
         interlaced: true
       }))
-      .pipe(gulp.dest('app/assets/img'))
+      .pipe(gulp.dest('assets/img'))
   })
 }
