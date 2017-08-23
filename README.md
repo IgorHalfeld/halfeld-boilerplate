@@ -26,7 +26,7 @@ npm start
 
 # Run with docker compose
 docker-compose up
-#localhost:8080
+# localhost:8080
 ```
 
 ### Stack
